@@ -15,3 +15,20 @@
 body {
     font-family: "Vazir" !important;
 }
+
+.border-right-primary {
+  border-right : 5px solid #007bff;
+}
+
+.border-right-success {
+  border-right : 5px solid #28a745;
+}
+
+.border-right-info {
+  border-right : 5px solid #17a2b8;
+}
+
+
+.border-bottom-danger {
+  border-bottom : 5px solid #dc3545;
+}

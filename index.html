@@ -10,6 +10,7 @@
     <!--  my custom CSS  -->
     <link rel="stylesheet" href="./css/main.css">
 
+
     <title>Ali-Gh-Dev || Admin Pannel</title>
 </head>
 
@@ -17,7 +18,7 @@
 <body>
 
 <!--  navbar  -->
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top py-0" id="main-nav">
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg py-0" id="main-nav">
     <div class="container">
         <a class="navbar-brand" href="#home">
             <img src="./images/logo-img.png" width="40" height="40" class="rounded-circle" alt="Logo-img">
@@ -82,7 +83,220 @@
     </div>
 </nav>
 
+<!-- header -->
+<header class="py-3">
 
+    <div class="container">
+        <div class="row">
+
+            <div class="col-6">
+                <h3>
+                    <i class="fas fa-cog"></i> داشبورد
+                </h3>
+            </div>
+
+            <div class="col-6 text-end">
+                <button class="btn btn-outline-primary"> دریافت گزارش <i class="fas fa-download"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<!-- actions -->
+<section id="actions" class="mb-4">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card border-right-primary shadow py-2">
+
+                    <div class="card-body">
+
+                        <div class="row g-0 align-items-center">
+
+                            <div class="col ms-2">
+                                <h5 class="fw-bold text-primary mb-3">
+                                    <i class="fas fa-pencil-alt text-muted"> </i> پست ها
+                                </h5>
+                                <h2 class="count mb-0 fw-bold text-muted"> 526 </h2>
+                            </div>
+
+                            <div class="col-auto">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#addPostModal">
+                                    <i class="fas fa-plus-circle fa-3x text-primary"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card border-right-success shadow py-2">
+
+                    <div class="card-body">
+
+                        <div class="row g-0 align-items-center">
+
+                            <div class="col ms-2">
+                                <h5 class="fw-bold text-success mb-3"><i
+                                        class="fas fa-clipboard-list text-muted"></i> دسته
+                                    بندی </h5>
+                                <h2 class="count mb-0 fw-bold text-muted"> 76 </h2>
+                            </div>
+
+                            <div class="col-auto">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#addCategoryModal">
+                                    <i class="fas fa-plus-circle fa-3x text-success"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-right-info shadow py-2">
+                    <div class="card-body">
+                        <div class="row g-0 align-items-center">
+                            <div class="col ms-2">
+                                <h5 class="fw-bold text-info mb-3"><i class="fas fa-users text-muted"></i>
+                                    کاربران
+                                </h5>
+                                <h2 class="count mb-0 fw-bold text-muted"> 15863 </h2>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#addUserModal">
+                                    <i class="fas fa-plus-circle fa-3x text-info"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ADD POST MODAL -->
+<div class="modal fade" id="addPostModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title"> ایجاد پست جدید </h5>
+                <button type="button" class="btn-close me-0" data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <div class="form-group">
+                        <label class="mb-1"> نام </label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group my-3">
+                        <label class="mb-1"> دسته بندی </label>
+                        <select class="form-select">
+                            <option value=""> لاراول</option>
+                            <option value=""> پی اچ پی</option>
+                            <option selected value=""> جاوااسکریپت</option>
+                            <option value=""> نود جی اس</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label mb-1">آپلود تصویر</label>
+                        <input class="form-control" type="file">
+                        <div class="form-text">حداکثر سایز 3 مگابایت</div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label class="mb-1"> توضیحات </label>
+                        <textarea name="editor1" class="form-control"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-start">
+                <button class="btn btn-primary" data-bs-dismiss="modal"> ثبت پست</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ADD CATEGORY MODAL -->
+<div class="modal fade" id="addCategoryModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title"> ثبت دسته بندی جدید</h5>
+                <button type="button" class="btn-close me-0" data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="title" class="mb-1"> عنوان </label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-start">
+                <button class="btn btn-success" data-bs-dismiss="modal"> ثبت دسته</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ADD USER MODAL -->
+<div class="modal fade" id="addUserModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h5 class="modal-title"> ثبت کاربر جدید</h5>
+                <button type="button" class="btn-close me-0" data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="mb-1"> نام </label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group my-3">
+                        <label class="mb-1"> ایمیل </label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="mb-1"> پسورد </label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label class="mb-1"> تکرار پسورد </label>
+                        <input type="password" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-start">
+                <button class="btn btn-info" data-bs-dismiss="modal"> ثبت کاربر جدید</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!--  bootstrap js  -->
@@ -91,11 +305,25 @@
         crossorigin="anonymous">
 </script>
 
+<!-- jQuery -->
+<script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+</script>
+
 <!--  my custom js  -->
 <script src="./js/script.js"></script>
 
 <!--fontawesome icons-->
 <script src="https://kit.fontawesome.com/e98763869b.js" crossorigin="anonymous"></script>
+
+<!-- ckeditor (changes <textarea> tag to a text editor) -->
+<script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('editor1');
+</script>
+
 
 
 </body>
