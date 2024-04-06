@@ -29,6 +29,6 @@ body {
 }
 
 
-.border-bottom-danger {
-  border-bottom : 5px solid #dc3545;
+.border-bottom-warning {
+  border-bottom : 5px solid #fcd336;
 }
