@@ -11,47 +11,61 @@
     <link rel="stylesheet" href="./css/main.css">
 
 
-    <title>Ali-Gh-Dev || Login</title>
+    <title>Ali-Gh-Dev || Register</title>
 </head>
 
 
 <body>
 
-<section id="login">
+<section id="register">
     <div class="container">
         <div class="row vh-100 align-items-center">
             <div class="col col-lg-11 mx-auto">
                 <div class="card shadow-lg">
                     <div class="row g-0">
                         <div class="col-lg-6 d-none d-lg-block">
-                            <img src="./images/login.jpg" class="img-fluid rounded-start" alt="login-image">
+                            <img src="./images/register.jpg" class="img-fluid rounded-start" alt="login-image">
                         </div>
-                        <div class="col-lg-6 p-5">
+                        <div class="col-lg-6 p-4">
                             <div class="card-body">
-                                <h4 class="card-title text-center text-muted my-4">ورود به پنل ادمین !</h4>
+                                <h4 class="card-title text-center text-muted my-4">ساخت حساب کاربری !</h4>
                                 <form>
-                                    <input type="email" class="form-control" placeholder="نام کاربری / ایمیل">
-                                    <input type="password" class="form-control my-3" placeholder="کلمه عبور">
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">مرا به خاطر بسپار</label>
+                                    <div class="row justify-content-between mb-3">
+                                        <div class="col"><input type="text" class="form-control" placeholder="نام">
+                                        </div>
+                                        <div class="col"><input type="text" class="form-control"
+                                                                placeholder="نام خانوادگی"></div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary w-100">ورود</button>
+
+                                    <input type="email" class="form-control mb-3" placeholder="ایمیل">
+
+                                    <div class="row justify-content-between mb-3">
+                                        <div class="col">
+                                            <input type="password" class="form-control" placeholder="کلمه عبور">
+                                        </div>
+                                        <div class="col">
+                                            <input type="password" class="form-control"
+                                                   placeholder="تکرار کلمه عبور">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary w-100">ساخت اکانت</button>
 
                                     <div class="my-5">
                                         <button type="submit" class="btn btn-danger w-100 mb-3">
                                             <i class="fab fa-google fa-fw"></i>
-                                            ورود با حساب گوگل
+                                            ساخت اکانت با حساب گوگل
                                         </button>
                                         <button type="submit" class="btn btn-info w-100">
                                             <i class="fab fa-facebook-f fa-fw"></i>
-                                            ورود با حساب فیسبوک
+                                            ساخت اکانت با حساب فیسبوک
                                         </button>
                                     </div>
+
                                     <div class="text-center lh-lg links">
-                                        <a href="#" class="text-decoration-none">کلمه عبور را فراموش کرده اید ؟</a>
+                                        <a href="#" class="text-decoration-none">کلمه عبور را فراموش کرده اید؟</a>
                                         <br>
-                                        <a href="./register.html" class="text-decoration-none">ساخت حساب جدید</a>
+                                        <a href="./login.html" class="text-decoration-none"> قبلا اکانت ساخته اید؟&nbsp;&nbsp;&nbsp;&nbsp;ورود!</a>
                                     </div>
 
                                 </form>

@@ -17,18 +17,58 @@ body {
 }
 
 .border-right-primary {
-  border-right : 5px solid #007bff;
+    border-right: 5px solid #007bff;
 }
 
 .border-right-success {
-  border-right : 5px solid #28a745;
+    border-right: 5px solid #28a745;
 }
 
 .border-right-info {
-  border-right : 5px solid #17a2b8;
+    border-right: 5px solid #17a2b8;
 }
 
 
 .border-bottom-warning {
-  border-bottom : 5px solid #fcd336;
+    border-bottom: 5px solid #fcd336;
+}
+
+/*  ====================== login page ======================  */
+
+#login img {
+    object-fit: cover;
+    height: 100%;
+}
+
+#login form input[type="email"] {
+    direction: rtl;
+}
+
+#login form button,
+#login form input {
+    border-radius: 1.5rem;
+}
+
+#login .links a {
+    font-size: 0.9rem;
+}
+
+/*  ====================== register page ======================  */
+
+#register img{
+    object-fit: cover;
+    height: 100%;
+}
+
+#register form input[type="email"] {
+    direction: rtl;
+}
+
+#register form button,
+#register form input {
+    border-radius: 1.5rem;
+}
+
+#register .links a {
+    font-size: 0.9rem;
 }
